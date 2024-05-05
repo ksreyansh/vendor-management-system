@@ -343,7 +343,7 @@ The authentication module consists of a custom user model (CustomUserModel) with
 
     Purpose: Test user login failure due to using an invalid HTTP method via API.
 
-Steps:
+- Steps:
     1. Send a GET request to the login endpoint.
     2. Assert that the response status code is HTTP 405 METHOD NOT ALLOWED.
 
