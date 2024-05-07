@@ -113,7 +113,7 @@ python manage.py migrate
 ```
 python manage.py createsuperuser
 ```
-- Follow the prompts to enter a username, email, and password for the superuser.
+- Follow the prompts to enter a email, and password for the superuser.
 
 ### Step 8: Run Development Server
 - Start the development server by running:
@@ -125,6 +125,27 @@ python manage.py runserver
 ## API Reference
 
 The following are the details of all the API endpoints along with their usage description.
+
+### AuthenticationAPI
+
+#### Login
+Login into the system
+
+```
+POST /auth/login/
+```
+Data parameters:
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `email`      | `string` | Registered email |
+| `password`      | `string` | Registered password |
+
+#### logout
+Logs out the user
+
+```
+POST /auth/logout/
+```
 
 ### VendorAPI
 
