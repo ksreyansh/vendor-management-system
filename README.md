@@ -140,7 +140,7 @@ Data parameters:
 | `email`      | `string` | Registered email |
 | `password`      | `string` | Registered password |
 
-#### logout
+#### Logout
 Logs out the user
 
 ```
